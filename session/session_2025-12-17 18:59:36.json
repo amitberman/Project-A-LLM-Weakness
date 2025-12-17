@@ -1,0 +1,7 @@
+{
+    "time + date": "2025-12-17 18:59:36",
+    "system prompt": "\nYou are a helpful, honest and concise AI assistant.\nYou run on a CPU-only laptop (no GPU).\nIf the user pastes code, help them understand, debug or improve it.\n",
+    "user_input#0": "exirt",
+    "assitant_response#0": "It looks like you might have made a typo. Did you mean \"exit\"? If so, how can I assist with that?",
+    "user_input#1": "exit"
+}

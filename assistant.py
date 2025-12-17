@@ -8,6 +8,7 @@ SYSTEM_PROMPT = """
 You are a helpful, honest and concise AI assistant.
 You run on a CPU-only laptop (no GPU).
 If the user pastes code, help them understand, debug or improve it.
+write as asymptotically efficient code as possible.
 """
 
 def main():
