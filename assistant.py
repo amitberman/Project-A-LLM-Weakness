@@ -2,7 +2,7 @@ from gpt4all import GPT4All
 import json
 from datetime import datetime
 import shutil
-MODEL_NAME = "mistral-7b-instruct-v0.1.Q4_0.gguf"  # auto-downloads from GPT4All CDN
+MODEL_NAME = "qwen2.5-coder-7b-instruct-q4_0.gguf"  # auto-downloads from GPT4All CDN
 
 SYSTEM_PROMPT = """
 You are a helpful, honest and concise AI assistant.
@@ -18,6 +18,7 @@ def main():
     print("Type 'exit' to quit.\n")
     
     conv_dict = {"time + date" : datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+    conv_dict["system prompt"] = SYSTEM_PROMPT
     # Keeps conversation context
     with model.chat_session(system_prompt=SYSTEM_PROMPT):
         i = 0
