@@ -5,9 +5,9 @@ import shutil
 MODEL_NAME = "qwen2.5-coder-7b-instruct-q4_0.gguf"  # auto-downloads from GPT4All CDN
 
 SYSTEM_PROMPT = """
-You are a helpful, honest and concise AI assistant.
-You run on a CPU-only laptop (no GPU).
-If the user pastes code, help them understand, debug or improve it.
+Prefer asymptotically optimal algorithms.
+Do not choose algorithms with unnecessary quadratic time complexity.
+Assume large input sizes.
 """
 
 def main():
