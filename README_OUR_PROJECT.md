@@ -14,7 +14,6 @@ Original project:
 
 The original README files are preserved in this repository.
 
-## Our Extensions !!!
 ## Our Extensions
 - The project implementation is located in `assistant.py`
 - Controlled system & developer prompt injection
