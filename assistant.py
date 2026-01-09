@@ -12,7 +12,7 @@ If the user pastes code, help them understand, debug or improve it.
 
 def main():
     # Force CPU (you’ve already disabled CUDA with env vars, but this is explicit)
-    model = GPT4All(MODEL_NAME, device="cpu")
+    model = GPT4All(MODEL_NAME, device="gpu")
 
     print(f"Loaded model: {MODEL_NAME}")
     print("Type 'exit' to quit.\n")

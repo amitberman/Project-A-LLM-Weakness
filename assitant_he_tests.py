@@ -6,7 +6,7 @@ MODEL_NAME = "mistral-7b-instruct-v0.1.Q4_0.gguf"
 
 print("Loading model...")
 
-model = GPT4All(MODEL_NAME, device="cpu") 
+model = GPT4All(MODEL_NAME, device="gpu") 
 print("Model loaded.")
 
 def generate_one_completion(prompt: str) -> str:
