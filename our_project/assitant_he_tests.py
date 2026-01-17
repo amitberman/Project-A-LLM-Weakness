@@ -2,7 +2,7 @@ from gpt4all import GPT4All
 from human_eval.data import write_jsonl, read_problems
 import tqdm 
 
-MODEL_NAME = "mistral-7b-instruct-v0.1.Q4_0.gguf"
+MODEL_NAME = "Meta-Llama-3.1-8B-Instruct-128k-GGUF"
 
 print("Loading model...")
 

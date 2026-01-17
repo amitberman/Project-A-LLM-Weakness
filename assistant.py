@@ -2,7 +2,7 @@ from gpt4all import GPT4All
 import json
 from datetime import datetime
 import shutil
-MODEL_NAME = "mistral-7b-instruct-v0.1.Q4_0.gguf"  # auto-downloads from GPT4All CDN
+MODEL_NAME = "Meta-Llama-3.1-8B-Instruct-128k-Q4_0.gguf"  # auto-downloads from GPT4All CDN
 
 SYSTEM_PROMPT = """
 You are a helpful, honest and concise AI assistant.
