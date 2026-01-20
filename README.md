@@ -15,7 +15,6 @@ how system prompts and developer prompts affect LLM outputs.
 - Evaluation experiments based on the HumanEval question set
 
 ## GPU running instructions
-How to run over the GPU :
 - change the Python script in run_eval.slurm to your file name
 - bash : sbatch run_eval.slurm
 - bash : evaluate_functional_correctness samples.jsonl

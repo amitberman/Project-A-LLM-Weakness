@@ -24,7 +24,7 @@
 #SBATCH --mem=16G
 
 # Time limit: 3 hours (Safe buffer for 160 questions)
-#SBATCH --time=3:00:00
+#SBATCH --time=6:00:00
 
 
 ### Execution Section ###
@@ -43,6 +43,7 @@ conda activate base
 
 # 3. Run the Python script
 # python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_exp.py
-python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/our_project/aviv_comparator.py
+# python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/our_project/aviv_comparator.py
+python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_man_formating.py
 
 echo "Job finished at $(date)"

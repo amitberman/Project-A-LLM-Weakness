@@ -31,11 +31,11 @@ def generate_one_completion(model, human_eval_prompt):
 
     # Post-processing: Strip Markdown code blocks if the model includes them
     completion = completion.strip()
-    if completion.startswith("```"):
+    if completion.startswith("\"\"\""):
         # Remove opening backticks and language identifier (e.g., ```python)
         completion = completion.split("\n", 1)[1]
         # Remove closing backticks
-        if completion.endswith("```"):
+        if completion.endswith("\"\"\""):
             completion = completion.rsplit("\n", 1)[0]
 
     return completion
