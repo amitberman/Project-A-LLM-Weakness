@@ -57,7 +57,8 @@ def clean_model_output(output):
     
     # 3. NEW: Remove "inline garbage" (like <--- comments)
     #    This deletes any text starting with " <" at the end of a line
-    output = re.sub(r"\s+<.*$", "", output, flags=re.MULTILINE)
+    # SAFER: Only deletes "<---" comments or special tags, keeps "x < y" valid
+    output = re.sub(r"\s+(<---|<\|).*$", "", output, flags=re.MULTILINE)
     return output.strip()
 
 def main():
