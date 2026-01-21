@@ -35,17 +35,29 @@ def build_llama3_prompt(system_instr, user_instr):
 
 def clean_model_output(output):
     """
-    Removes chatty artifacts (Markdown ticks, 'Sure!', etc.)
-    to prevent HumanEval syntax errors.
+    Sanitizes the model output to prevent SyntaxErrors in HumanEval.
     """
-    # 1. Remove markdown code blocks if present (```python ... ```)
+    # 1. CRITICAL: Remove the Llama 3 special tokens that cause SyntaxErrors
+    #    The model outputs these to signal "End of Turn", but Python can't execute them.
+    stop_tokens = [
+        "<|eot_id|>", 
+        "<|start_header_id|>", 
+        "<|end_header_id|>",
+        "<|end_of_text|>"
+    ]
+    for token in stop_tokens:
+        output = output.replace(token, "")
+
+    # 2. Remove Markdown code blocks (```python ... ```)
+    #    We use DOTALL so the dot (.) matches newlines
     code_block_pattern = r"```(?:python)?\n(.*?)```"
     match = re.search(code_block_pattern, output, re.DOTALL)
     if match:
         return match.group(1).strip()
     
-    # 2. Fallback: If no markdown, just return raw output 
-    #    (but strip leading/trailing whitespace)
+    # 3. NEW: Remove "inline garbage" (like <--- comments)
+    #    This deletes any text starting with " <" at the end of a line
+    output = re.sub(r"\s+<.*$", "", output, flags=re.MULTILINE)
     return output.strip()
 
 def main():
@@ -80,7 +92,8 @@ def main():
             max_tokens=400, 
             temp=0.1 # Low temp for coding accuracy
         )
-        
+        if "<|eot_id|>" in raw_completion:
+            raw_completion = raw_completion.split("<|eot_id|>")[0]
         # Clean the output
         cleaned_code = clean_model_output(raw_completion)
         
