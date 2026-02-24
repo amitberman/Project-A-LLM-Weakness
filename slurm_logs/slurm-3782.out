@@ -1,0 +1,25 @@
+Job started on ece-igum1 at Fri Jan 23 12:01:33 PM IST 2026
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /home/projects/hsdsl-prj10212/anaconda3/condabin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda-env
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/activate
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/deactivate
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.sh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/Conda.psm1
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/projects/hsdsl-prj10212/anaconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.csh
+no change     /home/avivbenyamin/.bashrc
+No action taken.
+
+CondaError: Run 'conda init' before 'conda activate'
+
+🔄 Loading Meta-Llama-3.1-8B-Instruct-128k-Q4_0.gguf...
+📚 Loading HumanEval dataset...
+🚀 Starting generation on 164 tasks...
+  0%|          | 0/164 [00:00<?, ?it/s]  1%|          | 1/164 [13:26<36:31:23, 806.64s/it]  1%|          | 2/164 [21:33<27:49:22, 618.29s/it]  2%|▏         | 3/164 [29:24<24:39:16, 551.29s/it]  2%|▏         | 4/164 [42:43<28:50:55, 649.09s/it]  3%|▎         | 5/164 [55:44<30:46:16, 696.71s/it]  4%|▎         | 6/164 [1:00:46<24:41:10, 562.47s/it]  4%|▍         | 7/164 [1:07:37<22:22:08, 512.92s/it]  5%|▍         | 8/164 [1:17:18<23:09:44, 534.52s/it]  5%|▌         | 9/164 [1:27:00<23:39:22, 549.44s/it]  6%|▌         | 10/164 [1:30:56<19:21:52, 452.68s/it]  7%|▋         | 11/164 [1:37:18<18:18:52, 430.93s/it]  7%|▋         | 12/164 [1:40:47<15:20:49, 363.48s/it]  8%|▊         | 13/164 [1:45:52<14:30:27, 345.88s/it]  9%|▊         | 14/164 [1:50:28<13:31:19, 324.53s/it]/var/spool/slurmd/job03782/slurm_script: line 47: 2644772 Aborted                 (core dumped) python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_test3.py
+Job finished at Fri Jan 23 01:55:19 PM IST 2026

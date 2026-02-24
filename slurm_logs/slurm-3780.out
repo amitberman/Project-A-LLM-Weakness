@@ -1,0 +1,57 @@
+Job started on ece-igum1 at Fri Jan 23 11:41:09 AM IST 2026
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /home/projects/hsdsl-prj10212/anaconda3/condabin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda-env
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/activate
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/deactivate
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.sh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/Conda.psm1
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/projects/hsdsl-prj10212/anaconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.csh
+no change     /home/amit.berman/.bashrc
+No action taken.
+
+CondaError: Run 'conda init' before 'conda activate'
+
+🔄 Loading Meta-Llama-3.1-8B-Instruct-128k-Q4_0.gguf...
+📚 Loading HumanEval dataset...
+🚀 Starting generation on 164 tasks...
+  0%|          | 0/164 [00:00<?, ?it/s]✅ Processed HumanEval/0
+  1%|          | 1/164 [02:00<5:28:26, 120.90s/it]✅ Processed HumanEval/1
+  1%|          | 2/164 [05:43<8:07:53, 180.70s/it]✅ Processed HumanEval/2
+  2%|▏         | 3/164 [07:40<6:46:21, 151.44s/it]✅ Processed HumanEval/3
+  2%|▏         | 4/164 [10:06<6:38:43, 149.52s/it]✅ Processed HumanEval/4
+  3%|▎         | 5/164 [13:07<7:06:14, 160.85s/it]✅ Processed HumanEval/5
+  4%|▎         | 6/164 [14:37<6:00:13, 136.79s/it]✅ Processed HumanEval/6
+  4%|▍         | 7/164 [17:05<6:07:15, 140.35s/it]✅ Processed HumanEval/7
+  5%|▍         | 8/164 [18:16<5:07:30, 118.27s/it]✅ Processed HumanEval/8
+  5%|▌         | 9/164 [19:57<4:51:53, 112.99s/it]✅ Processed HumanEval/9
+  6%|▌         | 10/164 [21:49<4:49:18, 112.72s/it]✅ Processed HumanEval/10
+  7%|▋         | 11/164 [24:34<5:27:50, 128.56s/it]✅ Processed HumanEval/11
+  7%|▋         | 12/164 [26:41<5:24:33, 128.12s/it]✅ Processed HumanEval/12
+  8%|▊         | 13/164 [28:53<5:25:42, 129.42s/it]✅ Processed HumanEval/13
+  9%|▊         | 14/164 [30:16<4:48:12, 115.29s/it]✅ Processed HumanEval/14
+  9%|▉         | 15/164 [31:28<4:13:44, 102.17s/it]✅ Processed HumanEval/15
+ 10%|▉         | 16/164 [32:44<3:52:56, 94.43s/it] ✅ Processed HumanEval/16
+ 10%|█         | 17/164 [34:01<3:38:30, 89.19s/it]✅ Processed HumanEval/17
+ 11%|█         | 18/164 [37:15<4:53:34, 120.65s/it]✅ Processed HumanEval/18
+ 12%|█▏        | 19/164 [39:38<5:07:21, 127.18s/it]✅ Processed HumanEval/19
+ 12%|█▏        | 20/164 [42:49<5:51:54, 146.63s/it]✅ Processed HumanEval/20
+ 13%|█▎        | 21/164 [45:29<5:58:30, 150.42s/it]✅ Processed HumanEval/21
+ 13%|█▎        | 22/164 [47:09<5:20:15, 135.32s/it]✅ Processed HumanEval/22
+ 14%|█▍        | 23/164 [48:27<4:37:24, 118.05s/it]✅ Processed HumanEval/23
+ 15%|█▍        | 24/164 [53:43<6:54:04, 177.46s/it]✅ Processed HumanEval/24
+ 15%|█▌        | 25/164 [55:12<5:50:05, 151.12s/it]✅ Processed HumanEval/25
+ 16%|█▌        | 26/164 [57:12<5:25:43, 141.62s/it]✅ Processed HumanEval/26
+ 16%|█▋        | 27/164 [58:44<4:49:34, 126.82s/it]✅ Processed HumanEval/27
+ 17%|█▋        | 28/164 [1:07:35<9:22:22, 248.11s/it]✅ Processed HumanEval/28
+ 18%|█▊        | 29/164 [1:08:34<7:10:21, 191.27s/it]✅ Processed HumanEval/29
+ 18%|█▊        | 30/164 [1:09:53<5:51:56, 157.59s/it]✅ Processed HumanEval/30
+ 19%|█▉        | 31/164 [1:11:05<4:52:50, 132.11s/it]✅ Processed HumanEval/31
+ 20%|█▉        | 32/164 [1:12:54<4:34:45, 124.89s/it]/var/spool/slurmd/job03780/slurm_script: line 47: 2199754 Aborted                 (core dumped) python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_test4.py
+Job finished at Fri Jan 23 01:00:42 PM IST 2026

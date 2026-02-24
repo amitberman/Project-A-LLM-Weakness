@@ -1,0 +1,73 @@
+Job started on ece-igum2 at Fri Jan 23 10:55:40 AM IST 2026
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /home/projects/hsdsl-prj10212/anaconda3/condabin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda-env
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/activate
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/deactivate
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.sh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/Conda.psm1
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/projects/hsdsl-prj10212/anaconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.csh
+no change     /home/amit.berman/.bashrc
+No action taken.
+
+CondaError: Run 'conda init' before 'conda activate'
+
+🔄 Loading Meta-Llama-3.1-8B-Instruct-128k-Q4_0.gguf...
+Failed to load libllamamodel-mainline-cuda-avxonly.so: dlopen: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Failed to load libllamamodel-mainline-cuda.so: dlopen: libcudart.so.11.0: cannot open shared object file: No such file or directory
+📚 Loading HumanEval dataset...
+🚀 Starting generation on 164 tasks...
+  0%|          | 0/164 [00:00<?, ?it/s]✅ Processed HumanEval/0
+  1%|          | 1/164 [04:22<11:51:52, 262.04s/it]✅ Processed HumanEval/1
+  1%|          | 2/164 [09:30<13:01:29, 289.44s/it]✅ Processed HumanEval/2
+  2%|▏         | 3/164 [14:13<12:48:31, 286.41s/it]✅ Processed HumanEval/3
+  2%|▏         | 4/164 [18:35<12:17:54, 276.72s/it]✅ Processed HumanEval/4
+  3%|▎         | 5/164 [21:55<11:00:24, 249.21s/it]✅ Processed HumanEval/5
+  4%|▎         | 6/164 [25:30<10:25:33, 237.56s/it]✅ Processed HumanEval/6
+  4%|▍         | 7/164 [30:42<11:25:11, 261.85s/it]✅ Processed HumanEval/7
+  5%|▍         | 8/164 [33:44<10:14:18, 236.27s/it]✅ Processed HumanEval/8
+  5%|▌         | 9/164 [38:54<11:09:53, 259.31s/it]✅ Processed HumanEval/9
+  6%|▌         | 10/164 [44:02<11:44:22, 274.43s/it]✅ Processed HumanEval/10
+  7%|▋         | 11/164 [47:42<10:57:17, 257.76s/it]✅ Processed HumanEval/11
+  7%|▋         | 12/164 [52:23<11:11:02, 264.89s/it]✅ Processed HumanEval/12
+  8%|▊         | 13/164 [57:29<11:38:16, 277.46s/it]✅ Processed HumanEval/13
+  9%|▊         | 14/164 [1:01:53<11:23:16, 273.31s/it]✅ Processed HumanEval/14
+  9%|▉         | 15/164 [1:06:59<11:43:03, 283.11s/it]✅ Processed HumanEval/15
+ 10%|▉         | 16/164 [1:11:22<11:23:43, 277.19s/it]✅ Processed HumanEval/16
+ 10%|█         | 17/164 [1:15:32<10:58:49, 268.91s/it]✅ Processed HumanEval/17
+ 11%|█         | 18/164 [1:20:48<11:29:08, 283.21s/it]✅ Processed HumanEval/18
+ 12%|█▏        | 19/164 [1:25:58<11:43:37, 291.16s/it]✅ Processed HumanEval/19
+ 12%|█▏        | 20/164 [1:30:51<11:39:49, 291.59s/it]✅ Processed HumanEval/20
+ 13%|█▎        | 21/164 [1:35:28<11:24:26, 287.18s/it]✅ Processed HumanEval/21
+ 13%|█▎        | 22/164 [1:38:23<10:00:09, 253.59s/it]✅ Processed HumanEval/22
+ 14%|█▍        | 23/164 [1:41:24<9:04:36, 231.75s/it] ✅ Processed HumanEval/23
+ 15%|█▍        | 24/164 [1:45:03<8:51:54, 227.96s/it]✅ Processed HumanEval/24
+ 15%|█▌        | 25/164 [1:50:07<9:40:48, 250.71s/it]✅ Processed HumanEval/25
+ 16%|█▌        | 26/164 [1:54:27<9:43:07, 253.53s/it]✅ Processed HumanEval/26
+ 16%|█▋        | 27/164 [1:59:32<10:14:15, 269.02s/it]✅ Processed HumanEval/27
+ 17%|█▋        | 28/164 [2:03:13<9:37:06, 254.61s/it] ✅ Processed HumanEval/28
+ 18%|█▊        | 29/164 [2:08:11<10:02:07, 267.61s/it]✅ Processed HumanEval/29
+ 18%|█▊        | 30/164 [2:11:34<9:14:33, 248.31s/it] ✅ Processed HumanEval/30
+ 19%|█▉        | 31/164 [2:15:18<8:54:06, 240.95s/it]✅ Processed HumanEval/31
+ 20%|█▉        | 32/164 [2:20:22<9:31:56, 259.98s/it]✅ Processed HumanEval/32
+ 20%|██        | 33/164 [2:25:05<9:42:20, 266.72s/it]✅ Processed HumanEval/33
+ 21%|██        | 34/164 [2:29:53<9:52:03, 273.26s/it]✅ Processed HumanEval/34
+ 21%|██▏       | 35/164 [2:34:48<10:01:34, 279.81s/it]✅ Processed HumanEval/35
+ 22%|██▏       | 36/164 [2:39:50<10:11:12, 286.50s/it]✅ Processed HumanEval/36
+ 23%|██▎       | 37/164 [2:44:56<10:18:25, 292.17s/it]✅ Processed HumanEval/37
+ 23%|██▎       | 38/164 [2:49:50<10:15:05, 292.90s/it]✅ Processed HumanEval/38
+ 24%|██▍       | 39/164 [2:52:43<8:55:10, 256.88s/it] ✅ Processed HumanEval/39
+ 24%|██▍       | 40/164 [2:57:50<9:21:56, 271.91s/it]✅ Processed HumanEval/40
+ 25%|██▌       | 41/164 [3:03:04<9:43:06, 284.45s/it]✅ Processed HumanEval/41
+ 26%|██▌       | 42/164 [3:07:59<9:44:50, 287.63s/it]✅ Processed HumanEval/42
+ 26%|██▌       | 43/164 [3:11:27<8:51:41, 263.65s/it]✅ Processed HumanEval/43
+ 27%|██▋       | 44/164 [3:16:41<9:17:33, 278.78s/it]✅ Processed HumanEval/44
+ 27%|██▋       | 45/164 [3:21:47<9:29:17, 287.04s/it]✅ Processed HumanEval/45
+ 28%|██▊       | 46/164 [3:26:31<9:22:36, 286.07s/it]✅ Processed HumanEval/46
+ 29%|██▊       | 47/164 [3:30:55<9:05:02, 279.51s/it]slurmstepd-ece-igum2: error: *** JOB 3768 ON ece-igum2 CANCELLED AT 2026-01-23T14:27:27 ***

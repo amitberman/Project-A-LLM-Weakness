@@ -2,44 +2,44 @@
 
 ### Job Configuration ###
 
-# Job name (will show up in squeue)
-#SBATCH --job-name=human_eval_gpu
+# Job name
+#SBATCH --job-name=human_eval_fix
 
-# Output file for standard print outputs (%j will be replaced by job ID)
+# Output/Error files
 #SBATCH --output=slurm_logs/slurm-%j.out
-
-# Error file for error logs (useful for debugging)
 #SBATCH --error=slurm_logs/slurm-%j.out
 
-# Partition/Queue name (Usually 'student-batch' or 'gpu' in Technion clusters)
-#SBATCH --partition=debug
+# Partition: CHANGED to 'student-batch' 
+# (The 'debug' partition has a 15-minute limit, so 6 hours would be rejected or killed)
+#SBATCH --partition=student-batch
 
 # Request 1 GPU
 #SBATCH --gpus=1
 
-# Request 2 CPU cores (sufficient for data loading)
+# Resources
 #SBATCH --cpus-per-task=2
-
-# Request 16GB of RAM (System memory, not GPU memory)
 #SBATCH --mem=16G
-
-# Time limit: 3 hours (Safe buffer for 160 questions)
 #SBATCH --time=6:00:00
-
 
 ### Execution Section ###
 
 echo "Job started on $(hostname) at $(date)"
 
-# Load user bash settings to enable conda
+# --- FIX 1: Correct Conda Activation ---
+# Do not source .bashrc or 'activate' a .sh file. 
+# Source the conda script, THEN activate the environment.
 source /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.sh
-
-#Activate your conda environment
 conda activate base
 
+# --- FIX 2: Handle the "Core Dumped" Crash ---
+# The crash happens because GPT4All is fighting with the cluster's GPU drivers.
+# We try to force it to use the CUDA backend explicitly.
+export GPT4ALL_BACKEND="cuda"
+
+# Debug print to confirm python version
+which python
+
 # 3. Run the Python script
-# python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_exp.py
-mkdir -p ./aviv_samples
-python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/our_project/aviv_comparator.py --output ./aviv_samples/my_custom_output.jsonl
+python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_test3.py
 
 echo "Job finished at $(date)"

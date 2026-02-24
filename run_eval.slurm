@@ -44,6 +44,6 @@ conda activate base
 # 3. Run the Python script
 # python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_exp.py
 # python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/our_project/aviv_comparator.py
-python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_man_formating.py
+python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/he_test_consensus_and_seperation.py
 
 echo "Job finished at $(date)"
