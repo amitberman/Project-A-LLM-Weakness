@@ -14,12 +14,14 @@ how system prompts and developer prompts affect LLM outputs.
 - **Conversation documentation stored as JSON files in the `session/` directory**, including full user–assistant interaction histories for analysis and evaluation
 - Evaluation experiments based on the HumanEval question set
 
-## GPU running instructions
+## running instructions
 - Insure Python script in run_eval.slurm is the path to your file name
-- bash : sbatch run_eval.slurm
-- bash : evaluate_functional_correctness samples.jsonl
-- bash : evaluate_functional_correctness data/example_samples.jsonl --problem_file=data/example_problem.json
+- bash : sbatch slurm_running_files/<name_of_file>.slurm
+- bash : evaluate_functional_correctness <name_of_file>.jsonl to get the Correctness Analysis
+- bash : python par_evaluation.py results/<result_file#1>.jsonl results/<result_file#2>.jsonl to get result comaparison according to PAR Metric
 - for more options see :  evaluate_functional_correctness --help
+
+
 
 ## HumanEval Question Set (Third-Party)
 This project uses evaluation questions from the open-source **HumanEval** repository:
