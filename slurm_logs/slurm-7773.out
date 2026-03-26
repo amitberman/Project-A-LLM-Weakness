@@ -1,0 +1,6 @@
+Job started on ece-ugproj2 at Thu Mar 26 03:25:48 PM IST 2026
+Traceback (most recent call last):
+  File "/home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/our_project_tests/qwen_basic_conflict.py", line 6, in <module>
+    from human_eval.data import write_jsonl, read_problems
+ModuleNotFoundError: No module named 'human_eval'
+Job finished at Thu Mar 26 03:25:48 PM IST 2026
