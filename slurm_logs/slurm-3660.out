@@ -1,0 +1,27 @@
+Job started on ece-igum2 at Tue Jan 20 09:25:22 PM IST 2026
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /home/projects/hsdsl-prj10212/anaconda3/condabin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda-env
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/activate
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/deactivate
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.sh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/Conda.psm1
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/projects/hsdsl-prj10212/anaconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.csh
+no change     /home/avivbenyamin/.bashrc
+No action taken.
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Failed to load libllamamodel-mainline-cuda-avxonly.so: dlopen: libcudart.so.11.0: cannot open shared object file: No such file or directory
+Failed to load libllamamodel-mainline-cuda.so: dlopen: libcudart.so.11.0: cannot open shared object file: No such file or directory
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:07<02:23,  7.55s/it] 10%|█         | 2/20 [00:16<02:35,  8.65s/it] 15%|█▌        | 3/20 [00:19<01:42,  6.02s/it] 20%|██        | 4/20 [00:24<01:26,  5.42s/it] 25%|██▌       | 5/20 [00:30<01:23,  5.59s/it] 30%|███       | 6/20 [00:36<01:21,  5.80s/it] 35%|███▌      | 7/20 [00:42<01:18,  6.03s/it] 40%|████      | 8/20 [00:47<01:05,  5.45s/it] 45%|████▌     | 9/20 [00:52<00:59,  5.43s/it] 50%|█████     | 10/20 [00:59<00:59,  5.91s/it] 55%|█████▌    | 11/20 [01:13<01:15,  8.33s/it] 60%|██████    | 12/20 [01:17<00:55,  6.94s/it] 65%|██████▌   | 13/20 [01:22<00:45,  6.57s/it] 70%|███████   | 14/20 [01:26<00:34,  5.74s/it] 75%|███████▌  | 15/20 [01:31<00:27,  5.41s/it] 80%|████████  | 16/20 [01:34<00:18,  4.69s/it] 85%|████████▌ | 17/20 [01:37<00:12,  4.20s/it] 90%|█████████ | 18/20 [01:47<00:11,  5.94s/it] 95%|█████████▌| 19/20 [01:50<00:05,  5.09s/it]100%|██████████| 20/20 [01:54<00:00,  4.82s/it]100%|██████████| 20/20 [01:54<00:00,  5.73s/it]
+Output written to: samples.jsonl
+Run evaluation with: evaluate_functional_correctness samples.jsonl --problem_file=problems_subset.jsonl
+/var/spool/slurmd/job03660/slurm_script: line 46: 1850310 Segmentation fault      (core dumped) python -u /home/projects/hsdsl-prj10212/Project-A-LLM-Weakness/our_project/aviv_comparator.py
+Job finished at Tue Jan 20 09:27:27 PM IST 2026

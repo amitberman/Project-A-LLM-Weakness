@@ -364,6 +364,8 @@ void EmbeddingLLMWorker::handleFinished()
         response = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute);
         Q_ASSERT(response.isValid());
     }
+    // QVariant response = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute);
+
     bool ok;
     int code = response.toInt(&ok);
     if (!ok || code != 200) {

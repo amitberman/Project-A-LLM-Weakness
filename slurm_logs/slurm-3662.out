@@ -1,0 +1,21 @@
+Job started on ece-igum1 at Tue Jan 20 09:41:44 PM IST 2026
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /home/projects/hsdsl-prj10212/anaconda3/condabin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/conda-env
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/activate
+no change     /home/projects/hsdsl-prj10212/anaconda3/bin/deactivate
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.sh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/Conda.psm1
+no change     /home/projects/hsdsl-prj10212/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/projects/hsdsl-prj10212/anaconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /home/projects/hsdsl-prj10212/anaconda3/etc/profile.d/conda.csh
+no change     /home/avivbenyamin/.bashrc
+No action taken.
+
+CondaError: Run 'conda init' before 'conda activate'
+
+  0%|          | 0/164 [00:00<?, ?it/s]  1%|          | 1/164 [00:09<26:03,  9.59s/it]  1%|          | 2/164 [00:21<30:09, 11.17s/it]  2%|▏         | 3/164 [00:26<21:59,  8.20s/it]  2%|▏         | 4/164 [00:34<21:40,  8.13s/it]  3%|▎         | 5/164 [00:44<22:57,  8.66s/it]  4%|▎         | 6/164 [00:50<20:54,  7.94s/it]  4%|▍         | 7/164 [01:00<22:36,  8.64s/it]  5%|▍         | 8/164 [01:07<20:50,  8.01s/it]  5%|▌         | 9/164 [01:16<21:39,  8.38s/it]  6%|▌         | 10/164 [01:26<22:55,  8.93s/it]  7%|▋         | 11/164 [01:46<31:07, 12.21s/it]slurmstepd-ece-igum1: error: *** JOB 3662 ON ece-igum1 CANCELLED AT 2026-01-20T21:44:00 ***

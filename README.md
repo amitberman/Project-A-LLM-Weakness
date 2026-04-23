@@ -12,6 +12,32 @@ how system prompts and developer prompts affect LLM outputs.
 - Controlled system & developer prompt injection
 - Prompt-sensitivity experiments
 - **Conversation documentation stored as JSON files in the `session/` directory**, including full user–assistant interaction histories for analysis and evaluation
+- Evaluation experiments based on the HumanEval question set
+
+## running instructions
+- Insure Python script in run_eval.slurm is the path to your file name
+- bash : sbatch slurm_running_files/<name_of_file>.slurm
+- bash : evaluate_functional_correctness <name_of_file>.jsonl to get the Correctness Analysis
+- bash : python par_evaluation.py results/<result_file#1>.jsonl results/<result_file#2>.jsonl to get result comaparison according to PAR Metric
+- for more options see :  evaluate_functional_correctness --help
+
+
+
+## HumanEval Question Set (Third-Party)
+This project uses evaluation questions from the open-source **HumanEval** repository:
+- Repository: https://github.com/openai/human-eval
+
+All rights to the original HumanEval tasks and questions belong to their
+respective authors. The HumanEval content is used in this project in
+accordance with its original license.
+
+The original HumanEval LICENSE file is preserved in this repository, and all
+HumanEval-related files retain their original copyright and licensing terms.
+
+This repository does not claim ownership over the HumanEval questions.
+The project’s contribution includes the orchestration layer, prompt
+injection setup, experiment pipeline, and analysis of model-generated
+outputs produced when running the evaluation.
 
 ## Based on GPT4All
 Original project:
@@ -19,7 +45,8 @@ Original project:
 - Repository: https://github.com/nomic-ai/gpt4all
 - License: Apache 2.0
 
-The original README files are preserved in this repository.
+The original README files and LICENSE of GPT4All are preserved in this repository.
 
 ## License
 This project follows the license of the original GPT4All project.
+

@@ -2,7 +2,7 @@ from gpt4all import GPT4All
 import json
 from datetime import datetime
 import shutil
-MODEL_NAME = "mistral-7b-instruct-v0.1.Q4_0.gguf"  # auto-downloads from GPT4All CDN
+MODEL_NAME = "Meta-Llama-3.1-8B-Instruct-128k-Q4_0.gguf"  # auto-downloads from GPT4All CDN
 
 SYSTEM_PROMPT = """
 You are a helpful, honest and concise AI assistant.
@@ -12,7 +12,7 @@ If the user pastes code, help them understand, debug or improve it.
 
 def main():
     # Force CPU (you’ve already disabled CUDA with env vars, but this is explicit)
-    model = GPT4All(MODEL_NAME, device="cpu")
+    model = GPT4All(MODEL_NAME, device="gpu")
 
     print(f"Loaded model: {MODEL_NAME}")
     print("Type 'exit' to quit.\n")
