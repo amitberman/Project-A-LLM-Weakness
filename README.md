@@ -7,12 +7,11 @@ This project extends GPT4All with an orchestration layer in order to study
 how system prompts and developer prompts affect LLM outputs.
 
 ## Our Extensions
-- The project implementation is located in `assistant.py`
-- **When running `assistant.py`, the model’s foundation weights will be downloaded automatically (3-4 GB).**
-- Controlled system & developer prompt injection
-- Prompt-sensitivity experiments
-- **Conversation documentation stored as JSON files in the `session/` directory**, including full user–assistant interaction histories for analysis and evaluation
-- Evaluation experiments based on the HumanEval question set
+- The project implementation is located in `our_project_tests`
+- **When running for the first time, the model’s foundation weights will be downloaded automatically (3-4 GB).**
+-** results of each test are in `results` directory.
+- Evaluation experiments based on the HumanEval question set.
+- the benchmark is done by `par_evaluation.py`
 
 ## running instructions
 - Insure Python script in run_eval.slurm is the path to your file name
