@@ -9,7 +9,7 @@ how system prompts and developer prompts affect LLM outputs.
 ## Our Extensions
 - The project implementation is located in `our_project_tests`
 - **When running for the first time, the model’s foundation weights will be downloaded automatically (3-4 GB).**
--** results of each test are in `results` directory.
+- **results of each test are in `results` directory saved as <name_of_the_test.jsonl>.**
 - Evaluation experiments based on the HumanEval question set.
 - the benchmark is done by `par_evaluation.py`
 
